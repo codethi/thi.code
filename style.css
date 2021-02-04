@@ -33,3 +33,6 @@ a .card:hover{
    min-height: 150px !important;
 }
 
+img{
+ max-height: 300px;
+}
