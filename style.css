@@ -35,4 +35,5 @@ a .card:hover{
 
 img{
  max-height: 300px;
+ -webkit-height: 200px;
 }
