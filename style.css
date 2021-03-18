@@ -7,9 +7,7 @@
 
 }
 
-h1 {
-   font-size: 40pt;
-}
+
 
 a{
    cursor: pointer;
@@ -36,17 +34,21 @@ a .card:hover{
 }
 
 img#perfil{
- max-height: 200px;
+ max-height: 70px;
 }
 
 img#logo{
-   max-width: 150px;
+   max-width: 20px;
 }
 
 img#miniLogo{
-   max-width: 100px;
+   max-width: 150px;
 }
 
 .textos{
    color: #213c49;
+}
+
+iframe{
+   border-radius: 40px;
 }
