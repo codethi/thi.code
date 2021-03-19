@@ -4,53 +4,27 @@
    padding: 0;
    margin: 0;
    font-family: 'Signika', sans-serif;
-
-}
-
-a{
-   cursor: pointer;
-   text-decoration: none;
-}
-
-a:hover {
-   text-decoration: none;
-   
-}
-
-a .card:hover{
-   background-color: #010b26 !important;
-   color: #fff !important;
-}
-
-.card-body:hover {
-   color: #fff !important;
-}
-
-
-.card {
-   min-height: 150px !important;
 }
 
 img#perfil{
  max-height: 70px;
 }
 
-img#logo{
+img#mini-logo{
    max-width: 20px;
 }
 
-img#miniLogo{
+img#logo{
    max-width: 40%;
    max-height: 40%;
 }
 
-.textos{
+.text-color{
    color: #213c49;
 }
 
 iframe{
    border-radius: 25px;
    padding: 15px;
-
 }
 
