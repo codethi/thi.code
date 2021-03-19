@@ -40,8 +40,8 @@ img#logo{
 }
 
 img#miniLogo{
-   width: 40%;
-   height: 40%;
+   max-width: 40%;
+   max-height: 40%;
 }
 
 .textos{
