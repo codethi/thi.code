@@ -15,7 +15,7 @@ img#mini-logo{
 }
 
 img#logo{
-   width: 170px;
+    width: 170px;
 }
 
 .text-color{
@@ -27,3 +27,12 @@ iframe{
    padding: 15px;
 }
 
+.btn-outline-purple{
+   border-color: #6f42c1;
+   color: #6f42c1; 
+}
+
+.btn-outline-purple:hover{
+   background-color: #6f42c1;
+   color: #fff; 
+}
