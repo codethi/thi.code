@@ -1,9 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Signika:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Signika", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+h3{
+  font-weight: 700;
+  color: #1071ff;
+}
+
+h5{
+  font-weight: 500;
+  color: #1071ff;
 }
 
 body {
@@ -18,9 +28,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-}
-
-.container {
 }
 
 .cartao {
@@ -44,13 +51,10 @@ img#logo {
   width: 170px;
 }
 
-.text-color {
-  color: #213c49;
-}
-
 iframe {
   border-radius: 22px;
   padding: 15px;
+  
 }
 
 .btn-outline-purple {
@@ -62,3 +66,47 @@ iframe {
   background-color: #6f42c1;
   color: #fff;
 }
+
+.btn-style{
+  border-radius: 50px;
+  color: #1071ff;
+  /* background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed); */
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  /* border-color: #1071ff ; */
+  
+  background-size: 300% 100%;
+  font-size: 20px;
+  font-weight: 500;
+
+  transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+}
+
+.btn-style:hover{
+  background-position: 100% 0;
+  background-color: #1071ff;
+  color: #fff;
+}
+
+.btn-style:focus {
+  outline: none;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+#logo-footer{
+  width: 150px;
+  height: 150px;
+}
+
+.title-text{
+  color: #1071ff;
+  font-weight: 600;
+  font-size: 18pt;
+}
+
