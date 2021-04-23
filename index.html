@@ -113,33 +113,60 @@
                      </div>
                   </div>
 
-                  <div class="row mt-5 mb-4">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <i class="title-text">Último video</i>
-                     </div>
-                  </div>
+                  
+               </div>
+            </div>
 
-                  <div class="row">
-                     <div class="col-md-12 d-flex justify-content-center embed-responsive embed-responsive-16by9">
-                        <iframe class='embed-responsive-item' src="https://www.youtube.com/embed/jze3TasX5DA" frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                     allowfullscreen></iframe>
-                     </div>
-                  </div>
 
-                  <div class="row mt-4 mb-4">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <i class="title-text">Playlist</i>
-                     </div>
-                  </div>
+            <div class="row mt-5 mb-4">
+               <div class="col-md-12 d-flex justify-content-center">
+                  <i class="title-text">Último video</i>
+               </div>
+            </div>
 
+            <div class="row">
+               <div class="col-md-12 d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                  <iframe class='embed-responsive-item' src="https://www.youtube.com/embed/jze3TasX5DA" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen></iframe>
+               </div>
+            </div>
+
+            <div class="row mt-4 mb-4">
+               <div class="col-md-12 d-flex justify-content-center">
+                  <i class="title-text">Playlist</i>
+               </div>
+            </div>
+
+            <nav>
+               <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                 <a class="nav-item nav-link active font-weight-bold" id="lo-fi-tab" data-toggle="tab" href="#lo-fi" role="tab" aria-controls="lo-fi" aria-selected="true">Lo-fi</a>
+
+                 <a class="nav-item nav-link font-weight-bold" id="melhores-tab" data-toggle="tab" href="#melhores" role="tab" aria-controls="melhores" aria-selected="false">As melhores</a>
+               
+               </div>
+             </nav>
+             <div class="tab-content" id="nav-tabContent">
+               
+               <div class="tab-pane fade show active" id="lo-fi" role="tabpanel" aria-labelledby="lo-fi-tab">
                   <div class="row">
                      <div class="col-md-12 d-flex justify-content-center p-0">
-                        <iframe id="deezer" title="deezer-widget" src="https://widget.deezer.com/widget/light/playlist/8939018902" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe id="deezer-lofi" title="deezer-widget" src="https://widget.deezer.com/widget/light/playlist/8939018902" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                      </div>
                   </div>
                </div>
-            </div>
+
+               <div class="tab-pane fade" id="melhores" role="tabpanel" aria-labelledby="melhores-tab">
+                  <div class="row">
+                     <div class="col-md-12 d-flex justify-content-center p-0">
+                        <iframe id="deezer-melhores" title="deezer-widget" src="https://widget.deezer.com/widget/light/playlist/8985366882" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                     </div>
+                  </div>
+               </div>
+              
+             </div>
+
          </div>
       </div>
 
@@ -153,17 +180,22 @@
    <script>
       let html = document.querySelector('html')
       let checkbox = document.querySelector('#dark')
-      let deezer = document.querySelector('#deezer')
+      let deezerLofi = document.querySelector('#deezer-lofi')
+      let deezerMelhores = document.querySelector('#deezer-melhores')
       
   
       checkbox.addEventListener('change', ()=>{
          html.classList.toggle('dark-mode')
          if(checkbox.checked){
-            let srcDark = deezer.getAttribute('src').replace('light', 'dark')
-            deezer.setAttribute('src', srcDark)
+            let srcDark = deezerLofi.getAttribute('src').replace('light', 'dark')
+            deezerLofi.setAttribute('src', srcDark)
+            let srcDark2 = deezerMelhores.getAttribute('src').replace('light', 'dark')
+            deezerMelhores.setAttribute('src', srcDark2)
          } else {
-            let srcLight = deezer.getAttribute('src').replace('dark', 'light')
-            deezer.setAttribute('src', srcLight)
+            let srcLight = deezerLofi.getAttribute('src').replace('dark', 'light')
+            deezerLofi.setAttribute('src', srcLight)
+            let srcLight2 = deezerMelhores.getAttribute('src').replace('dark', 'light')
+            deezerMelhores.setAttribute('src', srcLight2)
          }
          
       })
