@@ -13,6 +13,7 @@
   --btn-bg: #fff;
   --btn-bg-hover: #1071ff;
   --btn-color-hover: #fff;
+  --btn-color-dois: #fa7d17;
 }
 
 .dark-mode:root {
@@ -22,6 +23,7 @@
   --btn-bg: #081220;
   --btn-bg-hover: #fff;
   --btn-color-hover: #081220;
+  
 }
 
 h3{
@@ -34,12 +36,24 @@ h5{
   color: var(--body-color);
 }
 
+.inscricoes a{
+  white-space: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: var(--btn-color-dois);
+  box-shadow: 0 4px 15px 0 #fa7d17bf;
+}
+
+.inscricoes a:hover{
+  background-color: #fa7d17;
+}
+
 body {
   background: rgb(16, 113, 255);
   background: linear-gradient(
     0deg,
-    rgba(16, 113, 255, 1) 0%,
-    rgba(1, 211, 255, 1) 100%
+    rgb(16, 113, 255) 0%,
+    rgb(1, 211, 255) 100%
   );
 
   background-repeat: no-repeat;
