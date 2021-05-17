@@ -26,7 +26,7 @@
   
 }
 
-h3{
+h3, h2{
   font-weight: 700;
   color: var(--body-color);
 }
@@ -235,4 +235,9 @@ html::-webkit-scrollbar
 html::-webkit-scrollbar-thumb
 {
 	background-color: #fff;
+}
+
+#logodisc{
+  width: 25px;
+  height: 25px;
 }
