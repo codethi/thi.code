@@ -98,8 +98,10 @@ iframe {
   background-color: var(--btn-bg);
   
   background-size: 300% 100%;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
+
+  word-break: break-all;
 
   transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
@@ -123,8 +125,8 @@ footer{
 }
 
 #logo-footer{
-  width: 150px;
-  height: 150px;
+  margin-top: 4rem;
+  width: 10rem;
 }
 
 .title-text{
