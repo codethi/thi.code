@@ -23,6 +23,7 @@
 }
 
 h3,
+h1,
 h2 {
   font-weight: 700;
   color: var(--body-color);
@@ -31,6 +32,7 @@ h2 {
 h5 {
   font-weight: 500;
   color: var(--body-color);
+  font-size: 1rem;
 }
 
 .inscricoes a {
