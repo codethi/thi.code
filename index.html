@@ -1,237 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="icon" type="image/png" href="./img/logo.png" style='border-radius: 50%;' />
-   <title>thi.code</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/logo.png"
+      style="border-radius: 50%"
+    />
+    <title>thi.code</title>
+  </head>
 
-
-   <div class="container mb-5 p-4">
-
+  <body>
+    <div class="container mb-5 p-4">
       <div class="row d-flex justify-content-center">
-         <div class="col-md-6 cartao">
+        <div class="col-md-8 cartao">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-end">
+              <label class="switch">
+                <input type="checkbox" id="dark" />
+                <span class="slider round">
+                  <i class="fa fa-sun-o" aria-hidden="true"></i>
+                  <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </span>
+              </label>
+            </div>
+          </div>
 
-            <div class="row">
-               <div class="col-md-12 d-flex justify-content-end">
-                  <label class="switch">
-                     <input type="checkbox" id='dark'>
-                     <span class="slider round">
-                        <i class="fa fa-moon-o" aria-hidden="true"></i>
-                        <i class="fa fa-sun-o" aria-hidden="true"></i>
-                     </span>
-                  </label>
-               </div>
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+              <img
+                id="perfil"
+                class="rounded-circle"
+                src="./img/new-perfil.png"
+                alt="Foto de perfil"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-12 d-flex justify-content-center">
+              <h2 class="text-color">Thiago Lima</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <h5 class="text-center text-color">
+                <img
+                  src="./img/discord.png"
+                  id="logodisc"
+                  alt="Logo do Discord"
+                />
+                thicode#7343
+              </h5>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-12 mt-4 align-items-center">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div
+                  class="col-md-6 d-flex justify-content-center align-items-center"
+                >
+                  <a
+                    class="btn btn-style play-yt-one w-100 mb-3"
+                    target="_blank"
+                    href="https://youtube.com/playlist?list=PLR8JXremim5BaPqraGKBPS4rFhywgUAvz"
+                  >
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    Curso do ZERO a MERN Stack
+                  </a>
+                </div>
+
+                <div
+                  class="col-md-6 d-flex justify-content-center align-items-center"
+                >
+                  <a
+                    class="btn btn-style play-yt-two w-100 mb-3"
+                    target="_blank"
+                    href="https://youtube.com/playlist?list=PLR8JXremim5BNbLUpzYEi3Xnb790ttsE1"
+                  >
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    Git e Github
+                  </a>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-12 d-flex justify-content-center">
+                  <a
+                    class="btn btn-style youtube w-100 mb-3"
+                    target="_blank"
+                    href="https://www.youtube.com/c/ThiCodes"
+                  >
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    YouTube
+                  </a>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                  <a
+                    class="btn btn-style linkedin w-100 mb-3"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/thicode/"
+                  >
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    LinkedIn
+                  </a>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center">
+                  <a
+                    class="btn btn-style instagram w-100 mb-3"
+                    target="_blank"
+                    href="https://www.instagram.com/thi.code/"
+                  >
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram
+                  </a>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                  <a
+                    class="btn btn-style github w-100 mb-3"
+                    target="_blank"
+                    href="https://github.com/codethi"
+                  >
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    GitHub
+                  </a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                  <a
+                    class="btn btn-style codepen w-100 mb-3"
+                    target="_blank"
+                    href="https://codepen.io/thicode"
+                  >
+                    <i class="fa fa-codepen" aria-hidden="true"></i>
+                    CodePen
+                  </a>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-12 d-flex justify-content-center">
+                  <a
+                    class="btn btn-style driven w-100 mb-3"
+                    target="_blank"
+                    href="https://www.driven.com.br/"
+                  >
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    Driven Education
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4 mb-4">
+            <div class="col-md-12 d-flex justify-content-center">
+              <i class="title-text">Playlist para "Codar"</i>
+            </div>
+          </div>
+
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a
+                class="nav-item nav-link active font-weight-bold"
+                id="lo-fi-tab"
+                data-toggle="tab"
+                href="#lo-fi"
+                role="tab"
+                aria-controls="lo-fi"
+                aria-selected="true"
+                >Lo-fi</a
+              >
+
+              <a
+                class="nav-item nav-link font-weight-bold"
+                id="melhores-tab"
+                data-toggle="tab"
+                href="#melhores"
+                role="tab"
+                aria-controls="melhores"
+                aria-selected="false"
+                >As melhores</a
+              >
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="lo-fi"
+              role="tabpanel"
+              aria-labelledby="lo-fi-tab"
+            >
+              <div class="row">
+                <div class="col-md-12 d-flex justify-content-center p-0">
+                  <iframe
+                    id="deezer-lofi"
+                    title="deezer-widget"
+                    src="https://widget.deezer.com/widget/light/playlist/8939018902"
+                    width="100%"
+                    height="300"
+                    frameborder="0"
+                    allowtransparency="true"
+                    allow="encrypted-media"
+                  ></iframe>
+                </div>
+              </div>
             </div>
 
-
-            <div class="row ">
-               <div class="col-md-12 d-flex justify-content-center">
-                  <img id="perfil" class="rounded-circle" src="./img/new-perfil.png" alt="Foto de perfil">
-               </div>
+            <div
+              class="tab-pane fade"
+              id="melhores"
+              role="tabpanel"
+              aria-labelledby="melhores-tab"
+            >
+              <div class="row">
+                <div class="col-md-12 d-flex justify-content-center p-0">
+                  <iframe
+                    id="deezer-melhores"
+                    title="deezer-widget"
+                    src="https://widget.deezer.com/widget/light/playlist/8985366882"
+                    width="100%"
+                    height="300"
+                    frameborder="0"
+                    allowtransparency="true"
+                    allow="encrypted-media"
+                  ></iframe>
+                </div>
+              </div>
             </div>
-
-            <div class="row mt-3">
-               <div class="col-md-12 d-flex justify-content-center">
-                  <h2 class="text-color">Thiago Lima</h2>
-               </div>
-            </div>
-
-            <div class="row">
-               <div class="col-md-12">
-                  <h5 class="text-center text-color">
-                     <img src="./img/discord.png" id='logodisc' alt="Logo do Discord">
-                     thicode#7343
-                  </h5>
-               </div>
-            </div>
-
-            <div class="row d-flex justify-content-center align-items-center">
-
-               <div class="col-md-12 mt-4">
-
-                  
-
-                  <div class="row d-flex justify-content-center ">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank" href="https://youtube.com/playlist?list=PLR8JXremim5BaPqraGKBPS4rFhywgUAvz">
-                           <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                           Curso do ZERO a MERN Stack
-                        </a>
-                     </div>
-                  </div>
-
-                  
-                  <div class="row d-flex justify-content-center ">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank" href="https://www.youtube.com/c/ThiCodes">
-                           <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                           YouTube
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="row d-flex justify-content-center">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank"
-                           href="https://www.linkedin.com/in/thicode/">
-                           <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                           LinkedIn
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="row d-flex justify-content-center">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank" href="https://www.instagram.com/thi.code/">
-                           <i class="fa fa-instagram" aria-hidden="true"></i>
-                           Instagram
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="row d-flex justify-content-center">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank" href="https://twitter.com/thi_code">
-                           <i class="fa fa-twitter" aria-hidden="true"></i>
-                           Twitter
-                        </a>
-                     </div>
-                  </div>
-
-                  
-
-                  <div class="row d-flex justify-content-center">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank" href="https://github.com/codethi">
-                           <i class="fa fa-github" aria-hidden="true"></i>
-                           GitHub
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="row d-flex justify-content-center">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank" href="https://codepen.io/thicode">
-                           <i class="fa fa-codepen" aria-hidden="true"></i>
-                           CodePen
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="row d-flex justify-content-center">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank" href="https://blueedtech.com.br/">
-                           <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                           Blue EdTech
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="row d-flex justify-content-center ">
-                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-style w-100 mb-3" target="_blank" href="https://octoverse.github.com/">
-                           <i class="fa fa-github" aria-hidden="true"></i>
-                           The State of the Octoverse
-                        </a>
-                     </div>
-                  </div>
-
-               </div>
-            </div>
-
-            <div class="row mt-4 mb-4">
-               <div class="col-md-12 d-flex justify-content-center">
-                  <i class="title-text">Playlist para "Codar"</i>
-               </div>
-            </div>
-
-            <nav>
-               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-
-                  <a class="nav-item nav-link active font-weight-bold" id="lo-fi-tab" data-toggle="tab" href="#lo-fi"
-                     role="tab" aria-controls="lo-fi" aria-selected="true">Lo-fi</a>
-
-                  <a class="nav-item nav-link font-weight-bold" id="melhores-tab" data-toggle="tab" href="#melhores"
-                     role="tab" aria-controls="melhores" aria-selected="false">As melhores</a>
-
-               </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-
-               <div class="tab-pane fade show active" id="lo-fi" role="tabpanel" aria-labelledby="lo-fi-tab">
-                  <div class="row">
-                     <div class="col-md-12 d-flex justify-content-center p-0">
-                        <iframe id="deezer-lofi" title="deezer-widget"
-                           src="https://widget.deezer.com/widget/light/playlist/8939018902" width="100%" height="300"
-                           frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="tab-pane fade" id="melhores" role="tabpanel" aria-labelledby="melhores-tab">
-                  <div class="row">
-                     <div class="col-md-12 d-flex justify-content-center p-0">
-                        <iframe id="deezer-melhores" title="deezer-widget"
-                           src="https://widget.deezer.com/widget/light/playlist/8985366882" width="100%" height="300"
-                           frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-
-         </div>
+          </div>
+        </div>
       </div>
 
       <footer>
-         <img id="logo-footer" src="./img/thicodelogo.png" alt="">
+        <img id="logo-footer" src="./img/thicodelogo.png" alt="" />
       </footer>
+    </div>
 
-   </div>
+    <script>
+      const html = document.querySelector("html");
+      const checkbox = document.querySelector("#dark");
+      const deezerLofi = document.querySelector("#deezer-lofi");
+      const deezerMelhores = document.querySelector("#deezer-melhores");
 
+      checkbox.addEventListener("change", () => {
+        html.classList.toggle("dark-mode");
+        if (checkbox.checked) {
+          let srcLight = deezerLofi
+            .getAttribute("src")
+            .replace("light", "dark");
+          deezerLofi.setAttribute("src", srcLight);
+          let srcLight2 = deezerMelhores
+            .getAttribute("src")
+            .replace("light", "dark");
+          deezerMelhores.setAttribute("src", srcLight2);
+        } else {
+          let srcDark = deezerLofi.getAttribute("src").replace("dark", "light");
+          deezerLofi.setAttribute("src", srcDark);
+          let srcDark2 = deezerMelhores
+            .getAttribute("src")
+            .replace("dark", "light");
+          deezerMelhores.setAttribute("src", srcDark2);
+        }
+      });
+    </script>
 
-   <script>
-      const html = document.querySelector('html')
-      const checkbox = document.querySelector('#dark')
-      const deezerLofi = document.querySelector('#deezer-lofi')
-      const deezerMelhores = document.querySelector('#deezer-melhores')
-
-
-      checkbox.addEventListener('change', () => {
-         html.classList.toggle('dark-mode')
-         if (checkbox.checked) {
-            let srcDark = deezerLofi.getAttribute('src').replace('light', 'dark')
-            deezerLofi.setAttribute('src', srcDark)
-            let srcDark2 = deezerMelhores.getAttribute('src').replace('light', 'dark')
-            deezerMelhores.setAttribute('src', srcDark2)
-         } else {
-            let srcLight = deezerLofi.getAttribute('src').replace('dark', 'light')
-            deezerLofi.setAttribute('src', srcLight)
-            let srcLight2 = deezerMelhores.getAttribute('src').replace('dark', 'light')
-            deezerMelhores.setAttribute('src', srcLight2)
-         }
-
-      })
-   </script>
-
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
-</body>
-
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
